@@ -66,7 +66,9 @@ You need to set up each one to run the full application.
 
 ## Technologies Used
 Front-end: React, Vite, Tailwind CSS
+
 Back-end (Node.js): Express.js, CORS, Multer
+
 Back-end (Python/ML): FastAPI, Hugging Face Transformers (BERT), XGBoost, scikit-learn, pdfplumber
 
 
