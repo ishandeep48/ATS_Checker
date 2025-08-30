@@ -20,7 +20,7 @@ This score helps users understand how well their resume matches the job requirem
 
 ---
 ## NOTE
-**THE code which was used for training AI model is present at https://github.com/ishandeep48/ATS_Model **
+THE code which was used for training AI model is present at https://github.com/ishandeep48/ATS_Model 
 
 
 ## 🚀 Getting Started
