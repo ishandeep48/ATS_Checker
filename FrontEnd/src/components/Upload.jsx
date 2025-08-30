@@ -59,7 +59,7 @@ function Upload() {
       formData.append('file', file);
       formData.append('target', targetJob);
 
-      const response =  await axios.post('http://localhost:5000/upload', formData,
+      const response =  await axios.post('http://localhost:80/upload', formData,
         {
           headers: {
             'Content-Type': 'multipart/form-data',

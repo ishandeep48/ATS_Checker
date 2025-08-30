@@ -2,7 +2,7 @@ import express from 'express'
 const app = express();
 import middlewares from './components/middleware/middleware.js';
 import Routes from './components/Routes/index.js';
-const PORT = 5000;
+const PORT = 80;
 import {dirname} from 'path'
 import {fileURLToPath} from 'url'
 import path from 'path'

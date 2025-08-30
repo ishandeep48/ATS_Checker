@@ -33,7 +33,7 @@ function Navbar() {
               <Upload className="h-4 w-4" />
               <span>Upload</span>
             </Link>
-            <Link
+            {/* <Link
               to="/profile"
               className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                 isActive('/profile')
@@ -43,7 +43,7 @@ function Navbar() {
             >
               <User className="h-4 w-4" />
               <span>Profile</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
