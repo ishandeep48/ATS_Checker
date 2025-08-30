@@ -1,0 +1,6 @@
+BackEnd/node_modules
+FrontEnd/node_modules
+FrontEnd/dist
+dist-ssr
+*.local
+dist
