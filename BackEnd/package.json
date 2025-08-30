@@ -17,7 +17,9 @@
     "form-data": "^4.0.4",
     "multer": "^2.0.2",
     "nodemon": "^3.1.10",
+    "path": "^0.12.7",
     "pdf-parse": "^1.1.1",
-    "string-similarity": "^4.0.4"
+    "string-similarity": "^4.0.4",
+    "url": "^0.11.4"
   }
 }

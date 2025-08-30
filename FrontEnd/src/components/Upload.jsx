@@ -10,7 +10,6 @@ function Upload() {
   const [results, setResults] = useState(null);
   const [dragActive, setDragActive] = useState(false);
   const fileInputRef = useRef(null);
-
   const handleDrag = (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -191,7 +190,7 @@ function Upload() {
             {/* Main Target Job Result */}
             <div className="bg-white rounded-xl shadow-md p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                Analysis Results for: <span className="text-blue-600">{targetJob}</span>
+                Analysis Results for: <span className="text-blue-600">{results.target_job}</span>
               </h2>
               
               <div className="flex justify-center mb-6">
