@@ -64,6 +64,11 @@ You need to set up each one to run the full application.
   pip install -r requirements.txt
 ```
 
+**YOU CAN USE YOUR MODEL HOSTED SOMEWHERE ELSE DIRECTLY NOW**
+```bash
+  Model_API=Your Model API URL
+```
+
 ## Technologies Used
 Front-end: React, Vite, Tailwind CSS
 
