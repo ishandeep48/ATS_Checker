@@ -4,3 +4,4 @@ FrontEnd/dist
 dist-ssr
 *.local
 dist
+BackEnd/.env

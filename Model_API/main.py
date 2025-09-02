@@ -6,7 +6,7 @@ import numpy as np
 # import xgboost as xgb
 import pickle
 from sentence_transformers import SentenceTransformer , util
-
+import os
 # model = joblib.load("bert_model_for_xgboost.pkl")
 # le=joblib.load('le_model_for_xgboost.pkl')
 # bst = joblib.load("xgboost_bert_model.pkl")
@@ -85,4 +85,5 @@ async def predict_job(skillset : InputString):
     }
 
 if __name__ == "__main__":
-    uvicorn.run(app , host="0.0.0.0" , port=7860)
+    port = int(os.environ.get('PORT', 7860))
+    uvicorn.run(app , host="0.0.0.0" , port=port)

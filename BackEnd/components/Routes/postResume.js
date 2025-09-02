@@ -4,6 +4,10 @@ import multer from 'multer';
 import axios from 'axios';
 import FormData from 'form-data';
 import { parsePDF } from '../helper/functions.js';
+import dotenv from 'dotenv'
+
+dotenv.config();
+
 const storage = multer.memoryStorage();
 const upload = multer({storage});
 
@@ -22,7 +26,7 @@ router.post('/upload', upload.single('file'), async (req,res)=>{
         skills : skillSet,
         target_job : targetJob
     }
-    const response  = await axios.post('http://localhost:8000/predict',toSend)
+    const response  = await axios.post(process.env.Model_API,toSend)
 
     console.log(response.data)
     // const result = responjse.data

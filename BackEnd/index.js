@@ -16,9 +16,14 @@ Routes(app);
 app.use(express.static(path.join(__dirname,'dist')));
     // console.log(path.join(__dirname,'dist'));
 
-app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./dist/index.html'));
-})
+app.get('*wildcard', (req, res) => {
+    res.sendFile(path.join(__dirname,'dist','index.html'));
+});
+// app.get('*',(req,res)=>{
+//     // res.sendFile(path.join(__dirname,'./dist/index.html'));
+//     res.redirect('/')
+// })
 app.listen(PORT,(req,res)=>{
     console.log(`Server started at port ${PORT}`);
 })
+
